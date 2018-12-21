@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        h2{
+            font-size: 15px;
+        }
+        table, th, td{
+            border: 2px solid blue;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        td[rowspan]{
+            background-color: #5e5e5e;
+        }
+        #cstTable thead{
+            background-color: #2a6496;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h2 > Simple Table </h2>
+        <table width="100%" >
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                     <td>1</td>
+                     <td>William</td>
+                     <td>Usa</td>
+                 </tr>
+                 <tr>
+                     <td>2</td>
+                     <td>Johny</td>
+                     <td>Japan</td>
+                 </tr>
+                 <tr>
+                     <td>3</td>
+                     <td>Vikash</td>
+                     <td>India</td>
+                 </tr>
+            </tbody>
+        </table>
+
+    <!-- Table with Col Span -->
+    <h2> Table with Col Span </h2>
+
+    <table width="100%" >
+        <thead>
+        <tr>
+            <th>Sno</th>
+            <th colspan="2">Name & Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>William</td>
+            <td>Usa</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td colspan="2" style="background-color: #5cb85c">Johny & Japan</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Vikash</td>
+            <td>India</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Table With Row Span -->
+    <h2> Table With Row Span </h2>
+
+    <table width="100%" >
+        <thead>
+        <tr>
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>William</td>
+            <td>Usa</td>
+        </tr>
+        <tr>
+            <td>Johny</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vikash</td>
+            <td>India</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+    <table width="100%" id="cstTable" >
+        <thead>
+        <tr>
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>William</td>
+            <td>Usa</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Johny</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Vikash</td>
+            <td>India</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

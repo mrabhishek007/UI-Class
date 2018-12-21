@@ -1,0 +1,56 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.flex-container{
+    /*overflow: hidden;           Solution 1 */
+    background-color: white;
+    display: flex;            /*  Best Solution */
+    /*flex-wrap: wrap;  !*Flex-wrap allows us to wrap elements onto the next line when there is not enough room for them in the current row of content*!*/
+
+}
+
+/*.flex-container:after{          Solution 2
+    content: "";
+    clear: both;
+    display: block;
+
+}*/
+
+.box{
+    /*float:left;               for solution 1 & 2 this is mandatory   */
+
+    height:100px ;
+    max-width: 100px;
+    flex-grow: 1;
+    /*flex: 1 1 100px;   !* shortcut for flex properties : 1.flex-grow2, 2.flex-shrink, 3.flex-basis(initial length of a flexible item) *!*/
+}
+.one{
+    background: red;
+    /*flex-grow: 2;   !* it means box1 is displayed on  2 part of space of total width bcz flex-grow of box 1 is 2 , box 2 is ,box3 is 3  *!*/
+    /*flex-shrink: 2;    !*It shrink in different rate when browser width is decreasing *!*/
+}
+.two{
+    background: blue;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;   !*this will shrink less bcz it has lowest shrink value between box 1 box2 and box3*!*/
+
+}
+.three{
+    background: green;
+    /*flex-grow: 3;*/
+    /*flex-shrink: 4;   !*this will shrink most bcz it has biggest shrink value between box 1 box2 and box3*!*/
+}
+
+
+

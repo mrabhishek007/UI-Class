@@ -1,0 +1,42 @@
+.wrapper{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+body{
+  background: lightblue;
+  text-align: center;
+}
+
+/*img{
+  transform: translate(200px,250px);  !*200px at X axis & 250px at Y axis*!
+}*/
+
+/*img{
+ !* transform: scale(1,2);     1 = X axis , 2 = Y axis**!
+  !*transform: scale(2);        2 along both X and Y axis*!
+}*/
+
+/*
+img{
+    transform: rotateZ(70deg) translate(20px,50px) scale(2)
+}*/
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background-color: pink;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+   /* transition: 1s;   applicable for all state change*/
+    transition: background-color 1s, transform 2s 1s ease-in /*(transform 3s 1s means delay transition for 1 sec after that initialize transformation)*/    /* seperate effect for every element*/
+        
+}
+
+.circle:hover{
+    background-color: darkgreen;
+    transform: rotate(360deg);
+}

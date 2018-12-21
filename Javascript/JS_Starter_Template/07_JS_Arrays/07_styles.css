@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: "Comic Sans MS",sans-serif;
+}
+h2{
+    background-color: lightsalmon;
+    text-align: center;
+    padding: 10px;
+}
+div{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+
+.txtMsg[type="text"]{
+    padding: 12px 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+}
+
+::placeholder{
+    font-size: 18px;
+    color: darkslategrey;
+}
+
+#addItem, #deleteItem{
+    font-size: 18px;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 12px 45px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: chartreuse;
+}
+#deleteItem{
+    background-color: red;
+}

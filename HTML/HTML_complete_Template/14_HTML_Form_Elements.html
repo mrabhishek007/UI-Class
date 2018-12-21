@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: whitesmoke;
+        }
+        h2{
+            font-size: 15px;
+            color: #3276b1;
+        }
+        form{
+            background: linear-gradient(lightseagreen,lightslategray);
+            padding: 15px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 0 5px black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Simple Login Form -->
+    <h2>Simple Login Form</h2>
+    <form>
+        <label for="uname">Username</label>
+        <input type="text" id="uname">
+        <br>
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd">
+        <br>
+        <input type="submit" value="Submit">  <!--value can be anything-->
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <!-- Login form with Table -->
+    <h2>Login Form with Table</h2>
+
+    <form>
+        <table >
+            <tr>
+                <td>
+                    <label for="username">Username</label>
+                </td>
+                <td>
+                    <input type="text" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="submit" value="Submit">
+                </td>
+                <td>
+                   <input type="reset" value="Reset">
+                </td>
+
+            </tr>
+        </table>
+    </form>
+
+    <!-- Select box with Options -->
+    <h2>Select Box with Options</h2>
+    <form>
+        <label for="lang">Select a Language</label>
+        <select id="lang">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>Bootstrap</option>
+            <option>Javascript</option>
+            <option>Jquery</option>
+            <option>Ajax</option>
+        </select>
+    </form>
+
+    <!-- Select Box with optgroup  -->
+    <h2>Select Box with Optgroup</h2>
+    <form>
+        <label>Select a Technology</label>
+        <select>
+            <optgroup label="Language">
+                <option>Java</option>
+                <option>.Net</option>
+                <option>Python</option>
+                <option>Php</option>
+            </optgroup>
+            <optgroup label="Scripts">
+                <option>JavaScript</option>
+                <option>ShellScript</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <!-- Textarea box -->
+    <h2>Textarea box</h2>
+    <form>
+        <label>Your Message</label>
+        <textarea rows="5" cols="30"></textarea>
+    </form>
+
+    <!-- Datalist (HTML5) -->
+    <h2>Datalist (HTML5)</h2>
+    <form>
+        <label>Select a Technology</label>
+        <input list="technologies">
+        <datalist id="technologies">  <!-- When the list items are very big usee datalist -->
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>Jquery</option>
+            <option>AJAX</option>
+            <option>Angular JS</option>
+        </datalist>
+    </form>
+
+<br><br><br>
+</body>
+</html>

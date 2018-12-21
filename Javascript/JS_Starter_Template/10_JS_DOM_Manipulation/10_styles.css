@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: "Comic Sans MS",sans-serif;
+}
+h2{
+    background-color: lightsalmon;
+    text-align: center;
+    padding: 10px;
+}
+div{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+
+form{
+    background-color: lightgray;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+}
+
+input[type='text']{
+    font-size: 18px;
+    height: 32px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+button{
+    background-color: orangered;
+    font-size: 18px;
+    padding: 8px 25px;
+    color: white;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+button:hover{
+    box-shadow: 0 0 5px white;
+    opacity: 0.8;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Tooltip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .tooltip_btn{
+            background-color: orangered;
+            color: white;
+            border: none;
+            font-size: 25px;
+            padding:14px 43px;
+            box-shadow: 0 0 15px black;
+            border-radius: 10px;
+            position: relative;
+        }
+        .tooltip_text{
+            background-color: lightslategray;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            width: 200px;
+            font-size: 20px;
+            border-radius: 5px;
+            position: absolute;
+            display: none;
+        }
+        /* For hover effect */
+        .tooltip:hover .tooltip_text{
+            display: block;
+        }
+        /* To fix the bug of hover*/
+        .tooltip{
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="tooltip">
+        <button class="tooltip_btn"><i class="fa fa-spinner fa-spin"></i> Hover Me</button>
+        <p class="tooltip_text">You hover on Me ?</p>
+    </div>
+
+</body>
+</html>

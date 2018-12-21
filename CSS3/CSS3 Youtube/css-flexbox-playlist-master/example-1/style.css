@@ -1,0 +1,53 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    min-width: 960px;
+    margin: 0 auto;
+}
+nav{
+    background: #333;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 45px;
+}
+nav a:hover{
+    background-color: #555;
+
+}
+
+/* Flex Styles*/
+
+@media screen and (min-width: 768px){    /*  For PC and larger devices */
+
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    nav li{
+        /*flex: 1 1 0; !*flex grow , flex shrink,flex basis*!*/
+    }
+
+}
+
+
+
+
+
+

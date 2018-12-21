@@ -1,0 +1,29 @@
+ArrayList<Contents> contents = dataBaseHelper.getContents();
+
+            if(contents!=null && contents.size()!=0){
+
+                ArrayList<ArrayList<Contents>> contentList = new ArrayList<>();
+
+                int count = contents.size();
+                int init = count-1;
+
+                while (count>=9){
+
+                    ArrayList<Contents> list = new ArrayList<>();
+
+                    for(int i = 0 ; i<9; i++ ){
+                       list.add(contents.get(init));
+                       init--;
+                    }
+                    contentList.add(list);
+                    count = count - 9 ;
+                }
+
+                if (contentList.size() != 0) {
+                    loadNextPageDb(contentList);
+                }
+
+            }else{
+                Toast.makeText(context, "No data found in database", Toast.LENGTH_SHORT).show();
+
+            }

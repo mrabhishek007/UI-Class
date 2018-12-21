@@ -1,0 +1,239 @@
+/* Add Your Styles Here */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+/*---------------Main Header----------------*/
+.main_header{
+    background-image: url("images/technology.JPG");
+    padding: 15px;
+    background-size: cover;
+    color: white;
+    text-align: right;
+    font-size: 18px;
+}
+
+.active{
+    background-color: green;
+}
+
+/*----------------Main Navigation--------------*/
+
+.main_nav{
+    background-color: black;
+}
+
+.main_nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    display: inline-block;
+}
+
+.main_nav ul li a:hover{
+    background:#869171;
+}
+.main nav ul li a:active{
+    background-color: #64C95A;
+}
+
+/*--------------Latest News--------------*/
+.latest_news p{
+    margin: 0;
+    animation: news_para 14s infinite linear;
+}
+.latest_news span{
+    color: orangered;
+    font-weight: bold;
+}
+
+.latest_news{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 5px;
+    box-shadow: 0  0 10px #64C95A;
+    animation: news 2s infinite linear;
+    overflow: hidden;
+}
+
+@keyframes news {
+    0%,50%,100%{background-color: #869171;opacity: 0.9}
+    25%,75%{background-color: black}
+}
+@keyframes news_para {
+    0%{transform: translateX(100%)}
+    100%{transform: translateX(-40%)}
+}
+
+/*--------------Home News Section--------------*/
+
+
+/*    USing float:left
+
+.home_news_section{
+    margin-left: 15%;
+}
+
+.home_news_article{
+    border: 2px solid black;
+    width: 25% ;
+    float: left;
+    height: 550px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px;
+    transition: all 1s;
+
+}
+
+.home_news_article:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px black;
+    height: 600px;
+    width: 33%;
+}*/
+
+/* Using flex*/
+.home_news_section{
+    margin-left: 15%;
+    display: flex;
+}
+
+.home_news_article{
+    max-width: 25%;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px;
+    transition: all 1s;
+}
+
+.home_news_article:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px black;
+    max-width: 30%;
+    margin: 25px;
+}
+.home_news_article img{
+    width: 100%;
+}
+
+.home_news_section p{
+    padding: 10px;
+}
+
+
+/*     Main News Section   */
+
+.main_news_article{
+    /*border: 2px black solid;*/
+    width: 85%;
+    overflow: hidden;
+    margin: 10px auto;
+
+}
+.zoom{
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.zoom img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 1s ;
+}
+
+.zoom:hover img{
+    transform: scale(1.2, 1.2);
+}
+.main_news_article h2{
+    background: linear-gradient(to right,forestgreen,black,forestgreen);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: auto 2px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 15px green;*/
+}
+
+.main_footer{
+    clear: left;
+    background: linear-gradient(to right,forestgreen,black,forestgreen);
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+.main_footer small, .main_footer a{
+    color: orangered;
+    text-decoration: none;
+}
+
+
+/* -------------------- Gallery Section ------------------------ */
+.gallery_section{
+    width: 95%;
+    margin:15px auto;
+}
+
+.gallery_article{
+    /*border: 2px solid black;*/
+    width: 23%;
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+.gallery_article:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+
+}
+
+.gallery_article img{
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.gallery_article p{
+    font-weight: bold;
+}
+
+
+
+/*----------------About Section----------------*/
+.about_section{
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.about_section p{
+    font-size: 17px;
+}
+
+.client_images{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
